@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Supervised Learning Based Recommender System for Online Clothes Shopping </title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/mainpage.css') }}">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="navbar">
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="contactPage">Contact Us</a></li>
+
+
+          <div class="dropdown">
+            <span>Clothes Section</span>
+            <div class="dropdown-content">
+              <li><a href="male">Male</a></li><br />
+              <li><a href="female">Female</a></li><br />
+              <li><a href="kids">Kids</a></li>
+            </div>
+          </div>
+          &nbsp;
+          <div class="dropdown">
+            <span>Account</span>
+            <div class="dropdown-content">
+              <li><a href="showLogin">Login</a></li><br />
+              <li><a href="showSignUp">Signup</a></li>
+
+            </div>
+          </div>
+
+
+
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+  <h3>
+    Online Clothing Site<br /><br />
+    Female Clothes Page
+  </h3> &nbsp;
+  <br />
+  <br />
+  <img src="{{url_for('static', filename='20.jpg')}}" width="300" />
+  <img
+    src="{{url_for('static', filename='764004d4745d3dbb892031c3633bb72f--indian-outfits-anarkali-pakistani-dresses-wedding.jpg')}}"
+    alt="">
+
+</body>
+
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+
+  nav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #555;
+  }
+
+  p {
+    color: #555;
+  }
+
+  .container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  /* Style for Dropdown starts here*/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Style for Dropdown ends here */
+</style>
